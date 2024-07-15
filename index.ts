@@ -6,7 +6,11 @@ import inquirer from "inquirer";
 
 // const randomNumber = 13;
 // const randomNumber = Math.random() //giives value between 0 and 1
+
 const randomNumber = Math.floor(Math.random() * 10 + 1);  //floor round-down numbers //multiply by the number of digits we want //if dice then + 1
+
+console.log("welcome to number guessing game");
+
 const answers = await inquirer.prompt([
     {
         name: "userGuessedNumber",

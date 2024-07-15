@@ -1,4 +1,3 @@
-#! /usr/bin/env node
 import inquirer from "inquirer";
 // 1) computer will generate a random number - done
 // 2) user input for guessing number
@@ -6,6 +5,7 @@ import inquirer from "inquirer";
 // const randomNumber = 13;
 // const randomNumber = Math.random() //giives value between 0 and 1
 const randomNumber = Math.floor(Math.random() * 10 + 1); //floor round-down numbers //multiply by the number of digits we want //if dice then + 1
+console.log("welcome to number guessing game");
 const answers = await inquirer.prompt([
     {
         name: "userGuessedNumber",
@@ -18,7 +18,8 @@ if (answers.userGuessedNumber === randomNumber) {
 }
 else {
     console.log("Sorry, you guessed wrong. The correct number was: " + randomNumber);
-};
+}
+;
 // console.log(randomNumber);
 // console.log(answers);
 //ESNext (updates target itself)
