@@ -1,3 +1,4 @@
+
 import inquirer from "inquirer";
 // 1) computer will generate a random number - done
 // 2) user input for guessing number
